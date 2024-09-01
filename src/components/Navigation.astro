@@ -1,0 +1,41 @@
+<nav class="nav">
+  <ul class="links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About Me</a></li>
+    <li><a href="/resume">Resume</a></li>
+  </ul>
+</nav>
+
+
+<style>
+  .nav {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 2rem 0;
+    color: var(--text1);
+    font-family: var(--font-sans);
+    .links {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        a {
+          text-decoration: underline;
+          color: var(--text1);
+          font-weight: 400;
+          font-size: 1.25rem;
+          transition: background-color 0.3s;
+
+          &:hover {
+            background-color: var(--bg);
+          }
+        }
+      }
+    }
+  }
+</style>

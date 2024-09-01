@@ -1,0 +1,102 @@
+---
+import { Image } from "astro:assets";
+import headshot from "../images/headshot.jpg";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title='About Me'>
+  <header class='heading'>
+    <div class='text-wrapper'>
+      <h2 class='title'>MISSION STATEMENT</h2>
+      <p class="description">
+        My purpose is to explain, explore and promote the power of the arts in the lives of young people. The
+        arts when experienced as hands-on activities foster community, cultivate joy and cultivate wellbeing.
+      </p>
+    </div>
+    <div class='image-wrapper'>
+      <Image
+        src={headshot}
+        alt='Photo of Robert'
+      />
+    </div>
+  </header>
+
+  <section class="list-wrapper">
+    <h2 class="title">About Me</h2>
+    <ul class="list">
+        <li>Professor Emeritus at New Jersey City University with over 26 years of teaching experience in the Media Arts Department.</li>
+        <li>Over 40 years as a musician and workshop leader with children in Jersey City at various venues, including primary schools, public libraries, day care centers, and at Camp Liberty in Liberty State Park.</li>
+        <li>Received the Excellence in Teaching Award (2016) presented by the New Jersey City University Chapter of the National Society of Leadership and Success.</li>
+        <li>Author of the award-winning book <b>Mediating the Muse</b> (2005), exploring the relationship between technological change and the ways in which we conceptualize, experience, and understand music.</li>
+        <li>Co-author with Carmine Tabone of the award-winning book <b>The Arts and Play as Educational Media in the Digital Age</b> (2020). Based on four decades of teaching children in Jersey City, the book documents the crucial role of the arts and traditional forms of play in a child’s education and socialization.</li>
+        <li>Author of several published articles exploring the interconnection of the arts and community.</li>
+        <li>Recipient of the Carlos and Guillermo Vigil Prize (1986) for the publication of the best article to appear in Volume 5 of <b>Studies in Latin American Popular Culture</b>, titled “Violeta Parra and La Nueva Canción Chilena.”</li>
+        <li>Fluent in both Spanish and Portuguese.</li>
+        <li>Composed, recorded, and performed <b>A Tale of Two Cities</b>, a song cycle with songs about the people, places, and events in Jersey City and Hoboken history.</li>
+        <li>Composed, recorded, and performed <b>Song of the Poet</b>, a song cycle that places the pobs of authors such as Walt Whitman, Robert Frost, Pablo Neruda, Edgar Allan Poe, and several others in musical settings.</li>
+        <li>Produced and recorded <b>Sing Along With Camp Liberty</b>, a collection of songs sung by children.</li>
+        <li>Co-director and co-producer with Dina Bruno Ciborowski of the award-winning documentary <b>Man on a Mission</b>. The 40-minute video explores the transformative role that the arts play in the lives of children. The video was the winner of the Best Documentary Award at the 2024 Golden Door International Film Festival and has been selected for the 2024 Impact Docs Awards.</li>
+    </ul>
+  </section>
+
+
+</Layout>
+
+<style>
+  header {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+    justify-content: center;
+    .text-wrapper {
+      height: 100%;
+      flex: 1;
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+
+
+      .description {
+        margin-top: .5rem;
+        font-family: var(--sans-serif);
+        font-size: 1.5rem;
+      }
+    }
+    .image-wrapper {
+      height: 100%;
+      flex: 1.5;
+
+      > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .title {
+        font-size: 1.25rem;
+        font-weight: 900;
+        text-align: left;
+        text-wrap: balance;
+        color: var(--text1);
+        font-family: var(--font-serif);
+      }
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: var(--sans-serif);
+
+    > li {
+      line-height: 2;
+      font-size: 1.35rem;
+    }
+  }
+
+  .list-wrapper {
+    margin-top: 5rem;
+  }
+</style>
