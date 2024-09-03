@@ -1,0 +1,108 @@
+---
+import Layout from "../layouts/Layout.astro";
+import twelve from "../images/12.jpg";
+import thirteen from "../images/13.jpeg";
+import fourteen from "../images/14.jpg";
+import fifteen from "../images/15.jpg";
+import sixteen from "../images/16.png";
+import seventeen from "../images/17.png";
+import eighteen from "../images/18.jpg";
+import TextWithPhoto from "../components/TextWithPhoto.astro";
+---
+
+<Layout title='Music'>
+  <TextWithPhoto title='Music' photo={twelve} alt='Robert singing on stage'>
+    <blockquote>
+      <p>
+        “Practice any art, music, singing, dancing, acting, drawing, painting,
+        sculpting, poetry, fiction, essays, reportage, no matter how well or
+        badly, not to get money and fame, but to experience becoming, to find
+        out what’s inside you, to make your soul grow.”
+      </p>
+      <cite>— Kurt Vonnegut</cite>
+    </blockquote>
+  </TextWithPhoto>
+  <p class='text-center'>
+    Music has been the thread that has stitched my life together. I cannot even
+    imagine my life without music, without playing the guitar, writing songs, or
+    singing with other people. I believe that music is far too important to be
+    left to the professionals. We all need to sing, we all need to dance, and we
+    all need to participate in music regardless of our musical abilities. Music
+    is life.
+  </p>
+  <TextWithPhoto title='Aunt Flo' photo={thirteen} alt='Roberts Aunt'>
+    <p>
+      I was born into an extended family that loved to sing songs and share
+      stories. When I first showed an interest in learning the guitar, Aunt Flo
+      patiently instructed me in the family repertoire of old Tin Pan Alley
+      songs that she had learned to play on the piano by ear.
+    </p>
+  </TextWithPhoto>
+  <TextWithPhoto title='The Majestics' photo={fourteen} alt='The Majestics'>
+    <p>
+      One my first steps on the guitar was learning to play the four chords of
+      doowop while singing with the neighborhood acapella group, The Majestics.
+    </p>
+  </TextWithPhoto>
+  <TextWithPhoto title='Chile 1970' photo={fifteen} alt='Robert in Chile'>
+    <p>
+      As a young man, I made a leap of faith and spent a year in Chile where I
+      lived with a family of musicians. Without a radio or TV in the house, we
+      sang every evening after dinner.
+    </p>
+  </TextWithPhoto>
+  <TextWithPhoto
+    title='Community Awareness Series'
+    photo={sixteen}
+    alt='Robert and Danny'
+  >
+    <p>
+      Sitting and singing around tables in Brasil, I was introduced to bossa
+      nova by friends who scribbled chord diagrams for me on the back of
+      napkins. This is an announcement of a performance I shared with the
+      renowned saxophonist and vocalist, Danny Bacher.
+    </p>
+  </TextWithPhoto>
+  <TextWithPhoto title='Camp Liberty' photo={seventeen} alt='Robert and Danny'>
+    <p>
+      Children <i>love</i> to sing! My 40 years of work with children taught me that
+      young people should have the opportunity to sing every day, several times a
+      day. Singing is an activity that brings joy and community into our lives.
+    </p>
+  </TextWithPhoto>
+  <TextWithPhoto
+    title='Jersey City Free Public Library Outreach.'
+    photo={eighteen}
+    alt='Robert playing music at NJCU'
+  >
+    <p>
+      Besides lending books, public libraries have taken on the important role
+      of building and sustaining community. Here I am at Greenville Library just
+      a block away from the place where I was born, with my good friend Sam
+      Williams, director of the Community Awareness Series.
+    </p>
+  </TextWithPhoto>
+</Layout>
+
+<style>
+  picture {
+    width: 100%;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .text-center {
+    font-family: var(--font-sans);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--text1);
+    font-family: var(--font-sans);
+  }
+</style>

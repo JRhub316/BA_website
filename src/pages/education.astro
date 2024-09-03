@@ -1,0 +1,220 @@
+---
+import { Image } from "astro:assets";
+import four from "../images/4.jpg";
+import five from "../images/5.jpg";
+import six from "../images/6.png";
+import seven from "../images/7.jpg";
+import eight from "../images/8.png";
+import eight_pdf from "../pdf/8.pdf";
+import nine from "../images/9.jpg";
+import ten from "../images/10.jpg";
+import eleven from "../images/11.jpg";
+import Layout from "../layouts/Layout.astro";
+
+import TextWithPhoto from "../components/TextWithPhoto.astro";
+---
+
+<Layout title='Education'>
+  <header class='header'>
+    <div class='text'>
+      <h2>Education</h2>
+      <blockquote>
+        <p>
+          “Education is not preparation for life; education is life itself.”
+        </p>
+        <cite>John Dewey</cite>
+      </blockquote>
+    </div>
+    <div class='image'>
+      <Image src={four} alt='Carmine and Robert singing with kids' />
+    </div>
+  </header>
+  <TextWithPhoto
+    title='Teaching Children'
+    photo={five}
+    alt='Children in music tent'
+  >
+    Children taught me how to teach. If they are depressed, distracted and
+    bored, learning in an uphill battle and teacher burnout is almost
+    inevitable. But, if one can engage the energy of children, the sky is the
+    limit. In my workshops, I customarily use a mixed bag of games, songs,
+    stories and writing activities to activate participation.
+  </TextWithPhoto>
+  <TextWithPhoto
+    title='Drama in Education'
+    photo={six}
+    alt='Drama in the class'
+  >
+    <p>
+      Drama in education builds naturally upon a child’s natural propensity to
+      play make believe. By placing children in role as characters in an
+      unfolding and flexible story, drama in education allows the creative
+      teacher to introduce challenges and complexity as a means of developing
+      academic skills, attitudes and habits of mind. In role as characters in a
+      story, children converse, respond, argue, write and discuss as would the
+      characters they are playing and bringing to life in the classroom drama.
+    </p>
+    <p>
+      For a more complete discussion of this method, see <b
+        >The Arts and Play as Educational Media in the Digital Age</b
+      >. Co-authored with Carmine Tabone. (New York: Peter Lang Publishing,
+      2020). Winner of the Susanne Langer Award.
+    </p>
+  </TextWithPhoto>
+  <TextWithPhoto title='Children’s Plays' photo={seven} alt='Girls Dancing'>
+    <p>
+      Storytelling binds us with the wisdom, humor, and dramatic tales of
+      different generations and other cultures. It comes in all sizes, shapes
+      and forms of media. Stories can be mediated and shared through ritual,
+      costume, dance, music, art, song, plays and, of course, words.
+    </p>
+    <p>
+      Over the 40 years I worked with children in Jersey City, I made a special
+      effort to include at least one story in my workshops and to make
+      storytelling a daily feature of life at Camp Liberty.
+    </p>
+    <p>
+      I also wrote and directed several plays based upon folktales, fairytales
+      and myths from around the world. Among the plays which I adapted for the
+      stage were “The Pied Piper of Hamelin,” “Alejandra the Fearless,” “King
+      Midas,” “The Magic Ring,” “Aladdin and the Magic Lamp,” “The White Snake,”
+      “Jack and the Beanstalk,” “The Three Ravens,” and “The Swallow and the Tom
+      Cat.”
+    </p>
+  </TextWithPhoto>
+  <TextWithPhoto
+    title='Sing Along with Camp Liberty'
+    photo={eight}
+    alt='Girls Dancing'
+  >
+    <p>
+      Thanks to the generosity of Nicola Stemmer and his “9 Lives Recording
+      Studio,” I was able to produce this album of children singing camp songs
+      as a fund raiser for Camp Liberty.
+    </p>
+    <p>
+      For purchase contact: The Educational Arts Team, 300 Morris Pesin Drive,
+      Jersey City, NJ 07305.
+    </p>
+    <a href={eight_pdf} target='_blank'>View PDF</a>
+  </TextWithPhoto>
+  <TextWithPhoto
+    title='Teaching University Students'
+    photo={nine}
+    alt='Robert with students in a classroom'
+  >
+    <p>
+      In order for serious learning to prosper, university students also need to
+      be energized and engaged. Week after week of lectures, tests and term
+      papers, are a cure for insomnia, not an effective method of teaching. I
+      often break the class into pairs or small groups so that they can share
+      and discuss various points of view. Interpersonal activities are also a
+      great way of connecting students of various ethnicities and backgrounds
+      who may never had the opportunity to meet and talk with each other.
+    </p>
+  </TextWithPhoto>
+  <TextWithPhoto
+    title='Do The Right Thing'
+    photo={ten}
+    alt='"Do the Right Thing" movie poster'
+  >
+    <p>
+      As with children, university students engage a subject more deeply and
+      openly through participating in drama. In reflecting on Spike Lee’s Do the
+      Right Thing, students are placed in role as reporters who investigate the
+      circumstances surrounding the violence at a pizzeria in Brooklyn. How
+      would The New York Post report the story differently than The Amsterdam
+      News? Whose voices would be heard and taken more seriously? Whose voices
+      would be ignored or misquoted? What images would be used to tell the
+      story? How would media reportage affect our understandings of what
+      happened?
+    </p>
+    <cite style='font-size: 1rem;'>
+      For a detailed outline of this workshop see “Reporting the Right Thing:
+      Exploring Media Bias in Reporting the News,” (with Carmine Tabone and Dina
+      Bruno), Explorations in Media Ecology, 2008, Vol. 7, No. 1.
+    </cite>
+  </TextWithPhoto>
+  <TextWithPhoto
+    title='Interactive Forms of Play'
+    photo={eleven}
+    alt='Robert walking with kids holding a guitar'
+  >
+    <p>
+      As we enter more deeply into the digital age, children need to have
+      opportunities away from screens, in environments that are interpersonal
+      and face-to-face.
+    </p>
+    <p>
+      For a more complete discussion of the importance of interactive forms of
+      play, see:
+    </p>
+    <cite style='font-size: 1rem;'>
+      “A Question of Balance: Children, Pedagogy and Play in the Age of Digital
+      Technology,&quot; Ricerche di Pedagogia e Didattica (Journal of Theories
+      and Research in Education), Universitá di Bologna, Vol. 12, No.2, 2017.
+    </cite>
+    <cite style='font-size: 1rem;'>
+      “The Media Ecology of Play: A Preliminary Probe of Childhood Play in the
+      Digital Age,” with Carmine Tabone. Explorations in Media Ecology. Vol. 16,
+      No. 1, March 2017.
+    </cite>
+  </TextWithPhoto>
+</Layout>
+
+<style>
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .text {
+      flex: 1;
+
+      > h2 {
+        font-size: 2rem;
+        font-weight: 900;
+        color: var(--text1);
+        font-family: var(--font-serif);
+      }
+
+      > blockquote {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: var(--text1);
+        font-family: var(--font-sans);
+
+        > cite {
+          margin-top: 1rem;
+          font-size: 1.25rem;
+        }
+      }
+    }
+
+    .image {
+      flex: 1;
+
+      > img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .header {
+      flex-direction: row;
+      gap: 2rem;
+      align-items: center;
+
+      .text {
+        flex: 1;
+      }
+
+      .image {
+        flex: 1.5;
+      }
+    }
+  }
+</style>

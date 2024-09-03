@@ -141,6 +141,7 @@ import Navigation from "../components/Navigation.astro";
       left: 0;
       max-width: 100px;
       opacity: .6;
+      display: none;
     }
 
     .right-leaf {
@@ -149,6 +150,7 @@ import Navigation from "../components/Navigation.astro";
       right: 0;
       max-width: 100px;
       opacity: 0.6;
+      display: none;
     }
   }
   .main {
@@ -159,5 +161,14 @@ import Navigation from "../components/Navigation.astro";
     line-height: 1.6;
     padding-bottom: 3rem;
     z-index: 10;
+  }
+
+  @media only screen and (min-width: 1300px) {
+    .left-leaf {
+      display: block!important;
+    }
+    .right-leaf {
+      display: block!important;
+    }
   }
 </style>

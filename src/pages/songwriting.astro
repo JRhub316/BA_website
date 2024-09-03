@@ -1,0 +1,57 @@
+---
+import Layout from "../layouts/Layout.astro";
+import nineteen from "../images/19.jpg";
+import twenty from "../images/20.jpg";
+import twenty_one from "../images/21.png";
+import TextWithPhoto from "../components/TextWithPhoto.astro";
+---
+
+<Layout title='Songwriting'>
+  <TextWithPhoto photo={nineteen} alt='' title='Songwriting'>
+    Since the day I first put my hands on a guitar, I’ve been writing songs. The
+    arrival of the Beatles and Bob Dylan further encouraged me in this effort.
+    With the help of many great friends, I eventually recorded some of my
+    favorite songs.
+  </TextWithPhoto>
+  <TextWithPhoto photo={twenty} alt='song of the poet' title='Song of the Poet'>
+    <p>
+      The first cycle of songs I recorded was a collection of poems by authors
+      such as Walt Whitman, Edgar Allan Poe, Pablo Neruda and others that I
+      reworked and placed in musical settings.
+    </p>
+    <a
+      style='font-size: 1rem;'
+      href='https://www.youtube.com/@robertalbrecht5754?app=desktop.'
+      target='_blank'
+      >Here is a link to my musical interpretation of Robert Frost’s poem
+      “Mending Wall” with the help of my “tocayo”, Roberto Perez:
+    </a>
+    <p style='font-size: 1rem;'>
+      Song of the Poet is available for purchase at the measly price of $15 (in
+      check, no credit cards) which includes shipping and handling: Robert
+      Albrecht, 61 Corbin Ave., Apt. D-5, Jersey City, NJ 07306.
+    </p>
+  </TextWithPhoto>
+
+  <TextWithPhoto
+    photo={twenty_one}
+    alt='A tale of two cities'
+    title='A tale of two cities'
+  >
+    <p>
+      My second CD collection is a cycle of songs focused on the people, places
+      and events in the history of Jersey City and Hoboken. Hoboken was once an
+      important seaport (immortalized in the film On the Waterfront starring the
+      young Marlon Brando) and Jersey City was once an industrial center that
+      linked the island of Manhattan to the United States with railroads (also
+      defunct). Both cities have a shared history of immigration, poverty,
+      political corruption, and now, gentrification.
+    </p>
+    <p style='font-size: 1rem;'>
+      A Tale of Two Cities is available for purchase at the measly price of $15
+      (in check, no credit cards) which includes shipping and handling besides
+      some great music: Robert Albrecht, 61 Corbin Ave., Apt. D-5, Jersey City,
+      NJ 07306.
+    </p>
+  </TextWithPhoto>
+</Layout>

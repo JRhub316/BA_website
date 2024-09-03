@@ -1,0 +1,129 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import twenty_eight from "../images/28.jpg";
+import twenty_nine from "../images/29.jpg";
+import thirty from "../images/30.png";
+import thirty_a from "../images/30_a.png";
+import thirty_one from "../images/31.jpg";
+import thirty_two from "../images/32.jpg";
+import TextWithPhoto from "../components/TextWithPhoto.astro";
+---
+
+<Layout title='Publications'>
+  <TextWithPhoto
+    photo={twenty_eight}
+    alt='Robert working on his thesis'
+    title='Publications'
+  >
+    <p>
+      Not surprisingly, most of my writing has focused on the intersection of
+      music, the arts and community. Over the years, I have dedicated myself to
+      developing a style that is clear, coherent and, above all, understandable
+      to the non-specialist.
+    </p>
+    <p>
+      I have published two award winning books and scores of articles that run
+      the musical gamut from Italian American doowop to bossa nova, from Andean
+      religious festivals to the evolution of vaudeville and Tin Pan Alley. At
+      the heart of it all is the idea that music and the arts form the basis of
+      community.
+    </p>
+  </TextWithPhoto>
+  <TextWithPhoto
+    photo={twenty_nine}
+    alt='Abadiania catira'
+    title='The Technologizing of the Song'
+  >
+    <p>
+      <b>The Technologizing of the Song</b> was the study I conducted as my doctoral
+      dissertation while a student at NYU. During a seventeen-month period in 1988-1990,
+      I conducted an ethnographic field study in a small town called Abadiania in
+      the interior of Brazil. At the time of the study, only 30 percent of the rural
+      homes in Abadiania had access to electrical current while older participants
+      clearly remembered a time before any electricity existed at all. The study
+      contrasts the observations I recorded of the musical life in Abadiania as it
+      was currently experienced with the oral history reports of 40 individuals I
+      collected in the town.
+    </p>
+  </TextWithPhoto>
+  <TextWithPhoto
+    photo={thirty}
+    alt='mediating the muse'
+    title='Mediating the Muse'
+  >
+    <p>
+      In surveying the history of Western music, <b>Mediating the Muse</b> seeks
+      to uncover the essential nature of music as a form of communication dependent
+      upon technological mediation. The book argues that all music, whether it be
+      the rhythmic tapping of stones or the sophisticated coordination of a symphonic
+      orchestra, is the result of applied technique and technological innovation
+      that effects how we experience and conceptualize music.
+    </p>
+    <p>
+      This book is available from Amazon and also from the publisher, Hampton
+      Press.
+    </p>
+  </TextWithPhoto>
+  <TextWithPhoto
+    photo={thirty_a}
+    alt='girl on swing bookcover'
+    title='The Arts and Play as Educational Media in the Digital Age.'
+  >
+    <p>
+      Co-written with Carmine Tabone and based upon 40 plus years of experience
+      working with children in Jersey City, The Arts and Play as Educational
+      Media in the Digital Age outlines the ways in which the arts and creative
+      forms of play help to re-establish a balance in the education and
+      socialization of children as we enter more deeply into the Digital Age.
+      Winner of the Susanne Langer Award for “Outstanding Scholarship in the
+      Ecology of Symbolic Form,” we argue non-digital, non-electronic
+      experiences cultivate much needed alternative ways of thinking, feeling
+      and being in the world.
+    </p>
+    <p>
+      This book is available from Amazon and also from the publisher, Peter Lang
+      Publishing.
+    </p>
+  </TextWithPhoto>
+  <TextWithPhoto
+    photo={thirty_one}
+    alt='italian doowop band'
+    title='Doowop Italiano'
+  >
+    <p>
+      First prepared as a presentation at an academic convention in Italy, this
+      article maintains that Italian American doowop groups in their adaptation
+      of an African American form added something of their own cultural heritage
+      to the mix. As descendants of recent immigrants from southern Italy, the
+      singers of Italian American doowop were exposed to a rich musical
+      tradition that included opera, bel canto singers, and a very vibrant
+      tradition of popular song and public singing. All of this became
+      integrated into their musical expression of doowop.
+    </p>
+    <p>
+      For those interested, <a
+        href='https://www.tandfonline.com/doi/full/10.1080/03007766.2017.1414663'
+        target='_blank'>here is a link to the article</a
+      >
+    </p>
+  </TextWithPhoto>
+  <TextWithPhoto
+    photo={thirty_two}
+    alt='girl on swing bookcover'
+    title='La Tirana'
+  >
+    <p>
+      “The Virgin, The Princess and The Goddess: An Ethnographic Report of a
+      Religious Festival in the Andean Region of Northern Chile,” The Atlantic
+      Journal of Communication, Fall 2007.
+    </p>
+    <p>
+      Based on a field study I conducted with the assistance of the Chilean
+      musicologist Professor Lina Barrientos Pacheco, this article examines the
+      clash of pagan and Christian symbolism and practices within a ritual
+      celebration known as “La Tirana” conducted every July in the Andean region
+      of Northern Chile.
+    </p>
+  </TextWithPhoto>
+</Layout>
