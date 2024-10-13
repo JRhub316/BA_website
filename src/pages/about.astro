@@ -2,10 +2,11 @@
 import { Image } from "astro:assets";
 import headshot from "../images/headshot.jpg";
 import Layout from "../layouts/Layout.astro";
+import TextWithPhoto from "../components/TextWithPhoto.astro";
 ---
 
 <Layout title='About Me'>
-  <header class='heading'>
+  <!-- <header class='heading'>
     <div class='text-wrapper'>
       <h2 class='title'>MISSION STATEMENT</h2>
       <p class="description">
@@ -19,8 +20,13 @@ import Layout from "../layouts/Layout.astro";
         alt='Photo of Robert'
       />
     </div>
-  </header>
-
+  </header> -->
+  <TextWithPhoto photo={headshot} alt="Photo of Robert" title="Mission Statement">
+    <p>
+      My purpose is to explain, explore and promote the power of the arts in the lives of young people. The
+      arts when experienced as hands-on activities foster community, cultivate joy and cultivate wellbeing.
+    </p>
+  </TextWithPhoto>
   <section class="list-wrapper">
     <h2 class="title">About Me</h2>
     <ul class="list">
@@ -39,10 +45,19 @@ import Layout from "../layouts/Layout.astro";
     </ul>
   </section>
 
+  <section class="contact">
+    <h2 class="title">Contact Information</h2>
+    <p>
+      You can contact me at <b>robertalbrecht15@yahoo.com</b>
+    </p>
+  </section>
 
 </Layout>
 
 <style>
+  .contact {
+    margin-top: 5rem;
+  }
   header {
     display: flex;
     width: 100%;
