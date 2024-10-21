@@ -9,16 +9,6 @@ import { Image } from "astro:assets";
   <header class='header'>
     <h1 class='title'>The Power of The Arts</h1>
     <div class="row">
-      <!-- <p>
-        "We stand in the doorway of a new epoch in human history. Artificial
-        intelligence, digital media and corporate domination threaten to swallow
-        our culture and marginalize our humanity. Within this dangerous context,
-        the arts can play the crucial role of re-affirming our humanity and
-        creating opportunities for the sustenance of community. We must become
-        active creators of art, not only passive consumers of it. Only when we
-        ourselves actively participate in experiences that allow us to sing, dance
-        and share stories, can the transforming power of the arts do their magic."
-      </p> -->
       <blockquote>
         <p>
           We stand in the doorway of a new epoch in human history. Artificial
@@ -59,13 +49,7 @@ import { Image } from "astro:assets";
       flex-direction: row;
     }
   }
-/* p {
-	max-width: 90%;
-	margin: 0 auto; 
-	padding: .8rem 0;
-	line-height: 160%;
-  font-size: 16px;
-} */
+
   blockquote{
     flex: 1;
 	border-top: 3px solid #130f40;
@@ -74,37 +58,5 @@ import { Image } from "astro:assets";
 	position: relative;
 		padding: 2rem;
 	font-size: 1.25rem
-}
-
-blockquote::before{
-	content: "";
-	width: 24px;
-	height:24px;
-	position: absolute;
-	top: -12px;
-	left: -12px;
-	background-size: 18px 18px;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-color: #fff;
-	border-radius: 50%;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-quote' width='44' height='44' viewBox='0 0 24 24' stroke-width='2' stroke='%23130f40' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M10 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 2.667 -1.333 4.333 -4 5' /%3E%3Cpath d='M19 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 2.667 -1.333 4.333 -4 5' /%3E%3C/svg%3E");
-	border-left: 1px solid #30336b;
-}
-
-blockquote::after{
-	content: "";
-	width: 24px;
-	height:24px;
-	position: absolute;
-	bottom: -12px;
-	right: -12px;
-	background-size: 18px 18px;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-color: #fff;
-	border-radius: 50%;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-quote' width='44' height='44' viewBox='0 0 24 24' stroke-width='2' stroke='%23130f40' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M10 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 2.667 -1.333 4.333 -4 5' /%3E%3Cpath d='M19 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 2.667 -1.333 4.333 -4 5' /%3E%3C/svg%3E");
-	border-left: 1px solid #30336b;
 }
 </style>

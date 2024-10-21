@@ -1,0 +1,60 @@
+---
+import { Image } from "astro:assets";
+import headshot from "../images/headshot.jpg";
+import Layout from "../layouts/Layout.astro";
+import TextWithPhoto from "../components/TextWithPhoto.astro";
+import thirty_five from "../images/35.png";
+---
+
+<Layout title='Announcements'>
+  <TextWithPhoto
+    photo={thirty_five}
+    alt='Poster'
+    title='A Tale of Two Cities: Jersey City and Hoboken'
+  >
+    <p>
+      Bob will perform selections from "A Tale of Two Cities: Jersey City and
+      Hoboken" on Wednesday evening, November 13, 2024 at the Museum of Jersey
+      City History. The Museum is located at 298 Academy Street, near Journal
+      Square. Admission is free.
+    </p>
+  </TextWithPhoto>
+  <section>
+    <p class='text'>
+      Bob will be screening and discussing "Man on a Mission", the award winning
+      documentary he co-produced with Dina Bruno, at the Universidad
+      Panamericana in Mexico City in June 2025.
+    </p>
+    <a href="https://movil.up.edu.mx/universidad-panamericana-en-linea/mea-2025" target="_blank">Link to conference</a>
+  </section>
+</Layout>
+
+<style>
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem 0;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--text1);
+    font-family: var(--font-sans);
+  }
+
+  @media only screen and (min-width: 768px) {
+    section {
+      gap: 2rem;
+      padding: 5rem 0;
+      align-items: flex-start;
+    }
+
+    .text, a {
+      font-size: 1.5rem;
+    }
+  }
+</style>
